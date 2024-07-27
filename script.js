@@ -6,6 +6,7 @@ const resultado = document.getElementById('resultado');
 const resultadoImagen = document.getElementById('resultadoImagen');
 const btnCopiar = document.getElementById('btnCopiar');
 const limpiar = document.getElementById('limpiar');
+const textArea = document.getElementById("inputTexto");
 
 
 // Función para validar texto (solo letras minúsculas y sin caracteres especiales // NOTA le agrege los caracteres ! @ y ?)
@@ -79,14 +80,10 @@ btnCopiar.addEventListener('click', () => {
         });
 });
 
-// let textArea = document.querySelector('inputTexto');
-// textArea.addEventListener('input', autoResize, false);
-
-// function autoResize() {
-//     this.style.height = 'auto';
-//     this.style.height = this.scrollHeight + 'rem';
-// }
-
+textArea.addEventListener("input", function () {
+   this.style.height = "auto";
+   this.style.height = this.scrollHeight + "px";
+});
 
 
 
