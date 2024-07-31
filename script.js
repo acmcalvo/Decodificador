@@ -80,6 +80,8 @@ btnCopiar.addEventListener('click', () => {
         });
 });
 
+
+// Función para textarea se agrande o encoja automatica
 textArea.addEventListener("input", function () {
    this.style.height = "auto";
    this.style.height = this.scrollHeight + "px";
