@@ -26,10 +26,8 @@
 
 html {
   line-height: 1.5;
- -webkit-text-size-adjust: 100%;
-  
+  -webkit-text-size-adjust: 100%;
 }
-
 
 body {
   background-color: var(--light-blue-100);
@@ -37,7 +35,6 @@ body {
   color: var(--dark-blue-300);
   margin: 1.5rem auto;
   max-width: 1800px;
-
 }
 
 .alura__logo {
@@ -65,7 +62,7 @@ body {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  height: calc(100% - 148px);
+  height: calc(100% - 8.125rem);
 }
 
 .container__textarea textarea {
@@ -111,7 +108,7 @@ textarea::placeholder {
   padding: 2% 0%;
   display: flex;
   gap: 1.87rem;
-    /* flex-direction: row; */
+  /* flex-direction: row; */
   /* justify-content: center; */
 }
 
@@ -140,12 +137,12 @@ button:hover {
   background-color: var(--light-blue-100);
 }
 
-.aside{
+.aside {
   box-shadow: 1px 1px 10px 1px #dad9d5;
   height: 25rem;
   margin: 0rem 2.5rem;
   padding: 1.2rem;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -195,6 +192,7 @@ button:hover {
   margin-top: 10px;
   max-width: 400px;
   word-wrap: break-word; /* Para que las palabras largas se ajusten a la línea */
+  
 }
 
 .container__footer {
@@ -234,17 +232,14 @@ button:hover {
     white-space: normal;
     flex-direction: row;
     line-height: 3rem;
- 
   }
 
   .resultado__1 {
     margin-top: 10px;
     height: 8rem;
- 
+
     flex-direction: row;
-  justify-content: center;
-
-
+    justify-content: center;
   }
 
   button {
@@ -270,10 +265,8 @@ button:hover {
   }
 }
 
-
 @media (max-width: 767px) {
-
-    .container {
+  .container {
     flex-direction: column;
     padding: 2rem;
   }
@@ -290,37 +283,26 @@ button:hover {
     display: flex;
   }
 
-/* .container {
-  flex-direction: column;
-  padding: 1.2rem;
-}*/
+  .resultado__imagen {
+    display: none;
+    flex-direction: column;
+  }
+  #resultado {
+    white-space: normal;
+    
+  }
 
-.resultado__imagen {
-  display: none;
-  flex-direction: column;
-} 
-
-.container__resultado {
-  /* width: auto;
-  height: auto;
-  text-align: center;
-  justify-content: center; */
-  gap: unset;
-  /* display: flex;
-  align-items: center; */
   
-}
 
-.container__botones {
-  /* padding: 2% 0%; */
-  /* display: flex; */
-  flex-direction: column;
-  justify-content: center;
-  gap: 1.87rem;
-  align-items:center;
-} 
+  .container__botones {
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.87rem;
+    align-items: center;
+  }
 
-/* .container__textarea {
-  padding-top: 80px;
-} */
+  .container__textarea {
+    padding-top: 2rem;
+height: 10em;
+  }
 }
